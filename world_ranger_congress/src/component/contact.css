@@ -1,0 +1,52 @@
+html{
+    background-image: url(../../public/image/background3.jpg);
+    width: fit-content;
+    background-size: cover;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    margin: 110px;
+}
+
+.textContainer{
+    text-align: start;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+}
+.textFieldContainer{
+    display: flex;
+    flex-direction: column;
+}
+.textHeading{
+    margin-bottom: 30px;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.contactDataContainer{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+}
+.icons{
+    margin-right: 10px;
+}
+
+.name{
+    width: 100%;       
+    color: white !important; 
+}
+.submitButton{
+    width: 30% !important; 
+    height: 40px;
+}
+.textField{
+    color: white !important;
+}
