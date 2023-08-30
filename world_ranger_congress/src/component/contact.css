@@ -1,52 +1,132 @@
-html{
-    background-image: url(../../public/image/background3.jpg);
-    width: fit-content;
-    background-size: cover;
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
 }
-.container{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 100px;
-    margin: 110px;
+
+body {
+  background: url(../image/baseBackground.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Keep the background fixed while scrolling */
+  width: 100%;
+  z-index: 0;
+}
+
+.rightImage, .leftImage {
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  position: fixed; /* Keep the images fixed while scrolling */
+  background-repeat: no-repeat;
+  background-size: cover; /* Adjust as needed */
+}
+
+.rightImage {
+  background: url(../image/topBackground2.png);
+  right: 0; /* Place the image on the right side */
+}
+
+.leftImage {
+  background: url(../image/topBackground1.png);
+  left: 0; /* Place the image on the left side */
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Rest of your CSS code */
+
+
+
+@keyframes walk {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: 1750px 0px;
+  }
+}
+
+.road {
+
+  position: fixed;
+  height: 100vh;
+  width: 3050px;
+  color: black;
+}
+
+.road > div {
+  width: 1525px;
+  
+}
+
+.container {
+  float: left;
+  height: 100vh;
+  /* line-height: 100vh; */
+  text-align: center;
+  width: 1500px;
+  position: relative;
+  font-size: 70px;
+}
+
+
+
+
+
+.formContainer{
+  margin-left: 32%;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
 }
 
 .textContainer{
-    text-align: start;
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    color: whitesmoke;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  color: whitesmoke;
+  margin-top: 15%;
 }
+
 .textFieldContainer{
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
 }
 .textHeading{
-    margin-bottom: 30px;
-    font-size: 25px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
+  margin-left: 30%;
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  margin-bottom: 25px;
 }
 
 .contactDataContainer{
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    font-size: 17px;
-    font-family: 'Poppins', sans-serif;
+  margin-left: 30%;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  font-family: 'Poppins', sans-serif;
 }
 .icons{
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .name{
-    width: 100%;       
-    color: white !important; 
+  width: 50%;       
+  color: white !important; 
 }
 .submitButton{
-    width: 30% !important; 
-    height: 40px;
+  width: 12% !important; 
+  height: 40px;
 }
 .textField{
-    color: white !important;
+  color: white !important;
 }

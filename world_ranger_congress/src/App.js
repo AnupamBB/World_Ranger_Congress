@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import React from 'react'; // Import React
 import './App.css';
 import Contact from './component/contact';
 
