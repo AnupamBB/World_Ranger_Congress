@@ -1,12 +1,13 @@
 import React, { useEffect } from 'react';
 import $ from 'jquery'; // Import jQuery library if not already imported
 import './contact.css';
-import Box from '@mui/material/Box';
+import { Box, ThemeProvider, createTheme } from '@mui/system';
 import TextField from '@mui/material/TextField';
 import MailOutlineRoundedIcon from '@mui/icons-material/MailOutlineRounded';
 import AddIcCallRoundedIcon from '@mui/icons-material/AddIcCallRounded';
 import LocationOnRoundedIcon from '@mui/icons-material/LocationOnRounded';
 import Button from '@mui/material/Button';
+
 
 
 let lastScrollTop = 0; // Define lastScrollTop here
@@ -82,27 +83,14 @@ function Contact() {
             </div>
         </div>
         <div className="container road2">
-            <div>
-            <Box
-                component="form"
-                sx={{
-                  '& > :not(style)': { m: 1, width: '12ch' },
-                }}
-                noValidate
-                autoComplete="off"
-                className='formContainer'
-                >
-                    <TextField className='textField' id="outlined-basic" label="Name" variant="outlined" />
-                    <TextField className='textField' id="outlined-basic" label="Email" variant="outlined" />
-                    <TextField
-                          id="outlined-multiline-static"
-                          label="Message"
-                          multiline
-                          rows={4}
-                        />
-                    <Button className='submitButton' variant="contained" color="primary">Click Me</Button>
-            </Box>
-          </div>
+            <form className='form'>
+                <div className='formContent'>
+                    <input className='name' type="text" name="name" placeholder='Name' />
+                    <input className='email' type="text" name="email" placeholder='Email'/>
+                    <textarea className='message' name="" id="" cols="30" rows="10" placeholder='Your Message'></textarea>
+                    <button className='submitButton'>Submit here</button>
+                </div>
+            </form>
         </div>
       </div>
     </div>
