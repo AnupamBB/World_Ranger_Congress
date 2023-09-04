@@ -217,6 +217,12 @@
     width: 300px;
     border-radius: 16px;
   }
+  .subtest{
+    margin-top: 1%;
+    color: #f2f2f2;
+    text-align: center;
+    margin-left: -19%;
+  }
   .carousel-item {
     background: transparent;
     color: black;

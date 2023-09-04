@@ -75,7 +75,7 @@ function Logopart() {
                                             src={item.imageSrc}
                                             alt={`Image ${index + 1}`}
                                         />
-                                        <p>{item.text}</p>
+                                        <p className="subtest">{item.text}</p>
                                     </div>
                                 ))}
                             </div>
