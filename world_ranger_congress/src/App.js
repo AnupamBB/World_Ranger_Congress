@@ -241,33 +241,30 @@ export default function App() {
         <MainLogoHeader style={{ backgroundImage: 'url(/images/dungeon.jpg)' }}>
                 <div className="heading">The logo of the 10th World Ranger Congress</div>
                 <div className="headingAndScrollContainer">
-                    <div className="logo"> 
-                        <img
-                            className="left-part-image"
-                            src={logo}
-                            alt="Left Image"
-                        />
-                    </div>
-                    <div>
-                        <HorizontalScroll className="ScrollingComponent">
-                            <div className="sliding Content1"> 
-                                <div className="ContentImage1" ></div>
-                                <h1> Landscapes of calcareous mountains of Provence, wetlands, Mediterranean forests, shoreline; </h1>
-                            </div>
-                            <div className="sliding Content2"> 
-                                <div className="ContentImage2" ></div>
-                                <h1> Fauna, from marine wildlife to waterbirds; </h1>
-                            </div>
-                            <div className="sliding Content3"> 
-                                <div className="ContentImage3" ></div>
-                                <h1> Flora, e.g. endemic underwater flowering plant Posidonia oceanica; </h1>
-                            </div>
-                            <div className="sliding Content4"> 
-                                <div className="ContentImage4" ></div>
-                                <h1> Human activities, represented by the wooden pontoon. </h1>
-                            </div>
-                        </HorizontalScroll>
-                    </div>
+                    <img
+                        className="left-part-image"
+                        src={logo}
+                        alt="Left Image"
+                    />
+                    <HorizontalScroll className="ScrollingComponent">
+                        <div className="sliding Content1"> 
+                            <div className="ContentImage1" ></div>
+                            <h1> Landscapes of calcareous mountains of Provence, wetlands, Mediterranean forests, shoreline; </h1>
+                        </div>
+                        <div className="sliding Content2"> 
+                            <div className="ContentImage2" ></div>
+                            <h1> Fauna, from marine wildlife to waterbirds; </h1>
+                        </div>
+                        <div className="sliding Content3"> 
+                            <div className="ContentImage3" ></div>
+                            <h1> Flora, e.g. endemic underwater flowering plant Posidonia oceanica; </h1>
+                        </div>
+                        <div className="sliding Content4"> 
+                            <div className="ContentImage4" ></div>
+                            <h1> Human activities, represented by the wooden pontoon. </h1>
+                        </div>
+                    </HorizontalScroll>
+                
                 </div>
         </MainLogoHeader>
         <MainArticleHeader className="main-article" style={{ backgroundImage: `url(/images/paris.png)` }}>
