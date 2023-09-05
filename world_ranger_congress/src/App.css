@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  width: 100vh;
+  height: 100vh;
 }
 
 .App-logo {
@@ -35,4 +37,65 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.headingAndScrollContainer{
+  display: flex;
+  flex-direction: column;
+}
+.heading{
+  font-size: 30px;
+  margin-left: 49vh;
+}
+.sliding{
+  margin-right: 10vh;
+  width: 35vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  
+}
+.ScrollingComponent{
+  height: 70vh !important;
+  width: 41vw !important;
+  position: absolute;
+  margin-left: 38%;
+}
+
+.left-part-image {
+  position: fixed;
+  top: 110vh;
+  left: 79px;
+  height: 25%;
+}
+.ContentImage1{
+  height: 35vh;
+  width: 35vh;
+  background-size: 35vh;
+  background-image: url("../public/images/img1.png");
+
+}
+.ContentImage2{
+  background-image: url("../public/images/img2.png");
+  height: 35vh;
+  width: 35vh;
+  background-size: 35vh;
+  
+}
+.ContentImage3{
+  background-image: url("../public/images/img3.png");
+  height: 35vh;
+  width: 35vh;
+  background-size: 35vh;
+  
+}
+.ContentImage4{
+  background-image: url("../public/images/img4.png");
+  height: 35vh;
+  width: 35vh;
+  background-size: 35vh;
+  
 }
